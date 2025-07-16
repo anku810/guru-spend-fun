@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mukesh Ambani की संपत्ति खर्च करें</title>
+    <meta name="description" content="मुकेश अंबानी की अरबों की संपत्ति को खर्च करने का मजेदार गेम">
+    <meta name="keywords" content="mukesh ambani, spend money, game, wealth, billionaire">
+    <meta property="og:title" content="Mukesh Ambani की संपत्ति खर्च करें">
+    <meta property="og:description" content="मुकेश अंबानी की अरबों की संपत्ति को खर्च करने का मजेदार गेम">
+    <meta name="twitter:title" content="Mukesh Ambani की संपत्ति खर्च करें">
+    <meta name="twitter:description" content="मुकेश अंबानी की अरबों की संपत्ति को खर्च करने का मजेदार गेम">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <!-- Predefined Tailwind CSS, use it as needed, or update base on your -->
+    <style type="text/tailwindcss">
+    @layer base {
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+    }
+
+    @layer components {
+        .money-card {
+            @apply bg-white rounded-xl shadow-lg border border-gray-200 p-6 hover:shadow-xl transition-all duration-300;
+        }
+        
+        .buy-btn {
+            @apply bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors duration-200 font-medium;
+        }
+        
+        .sell-btn {
+            @apply bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors duration-200 font-medium;
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/MoneyDisplay.js"></script>
+    <script type="text/babel" src="components/ItemCard.js"></script>
+    <script type="text/babel" src="components/Receipt.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
