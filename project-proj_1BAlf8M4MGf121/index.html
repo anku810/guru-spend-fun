@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spend Money Simulator - Virtual Shopping Experience</title>
+    <meta name="description" content="Virtual money spending simulator - see how you'd spend billions on luxury items, tech, and more">
+    <meta name="keywords" content="spending simulator, money game, virtual shopping, billionaire simulator">
+    <meta property="og:title" content="Spend Money Simulator">
+    <meta property="og:description" content="Virtual money spending simulator - see how you'd spend billions">
+    <meta name="twitter:title" content="Spend Money Simulator">
+    <meta name="twitter:description" content="Virtual money spending simulator - see how you'd spend billions">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <!-- Predefined Tailwind CSS, use it as needed, or update base on your -->
+    <style type="text/tailwindcss">
+    @layer theme {
+        /* Define custom theme values like colors, spacing, fonts, shadow etc. */
+    }
+
+    @layer base {
+        /* Add or override base styles for HTML elements (e.g., body, h1, p) */
+    }
+
+    @layer components {
+        .money-counter {
+            @apply text-6xl font-bold text-green-600 mb-8 text-center;
+        }
+        
+        .item-card {
+            @apply bg-white rounded-lg shadow-md p-6 border border-gray-200 hover:shadow-lg transition-shadow;
+        }
+        
+        .buy-btn {
+            @apply bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed;
+        }
+        
+        .sell-btn {
+            @apply bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed;
+        }
+        
+        .quantity-badge {
+            @apply bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm font-semibold;
+        }
+    }
+
+    @layer utilities {
+        /* Define custom utility classes (e.g., .text-shadow, .skew-10) */
+    }
+    </style>
+
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/ItemCard.js"></script>
+    <script type="text/babel" src="components/Receipt.js"></script>
+    <script type="text/babel" src="utils/items.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
